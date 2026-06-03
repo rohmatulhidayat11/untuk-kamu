@@ -5,34 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Untuk Kamu yang Paling Cantik 🌸</title>
     
-    <!-- Font estetik dan elegan dari Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@500;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Latar belakang untuk animasi hati -->
+    <!-- Animasi Latar Belakang (Hati Jatuh) -->
     <div id="hearts-background"></div>
+    
+    <!-- Wadah untuk Kursor Ajaib -->
+    <div id="cursor-trail"></div>
 
-    <main class="main-wrapper">
-        
-        <!-- KARTU PERTANYAAN -->
-        <div id="question-card" class="card">
+    <!-- BAGIAN 1: Sapaan Awal -->
+    <section class="screen hero-section">
+        <div class="glass-box text-center reveal">
+            <h1 class="title-large glow-text">Hai Kamu... ✨</h1>
+            <p class="message">Ada sesuatu yang pengen aku tunjukin ke kamu.</p>
+            <p class="scroll-hint">Scroll ke bawah pelan-pelan ya ⬇️</p>
+        </div>
+    </section>
+
+    <!-- BAGIAN 2: Cerita Singkat -->
+    <section class="screen story-section">
+        <div class="glass-box text-center reveal">
+            <h2 class="title">Tahu nggak? 🌷</h2>
+            <p class="message">
+                Jujur deh, tiap kali ngeliat notif dari kamu, rasanya seneng banget. 
+                Berada di deket kamu tuh bikin aku ngerasa tenang dan bisa jadi diriku sendiri. 
+                Kamu bener-bener se-spesial itu buat aku. 🦋
+            </p>
+            <p class="scroll-hint">Lanjut scroll lagi ke bawah ⬇️</p>
+        </div>
+    </section>
+
+    <!-- BAGIAN 3: Pertanyaan Utama (Nembak) -->
+    <section class="screen confession-section">
+        <!-- Kartu Pertanyaan -->
+        <div id="question-card" class="card reveal">
             <div class="card-content">
-                <div class="gif-frame">
-                    <!-- Kamu bisa ganti link ini dengan file lokalmu jika mau -->
-                    <img src= "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2MweHM2OW1xc3Z4czAwOHUyZTY1dmZsZXVndDlzdzh5bGZic2R3YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Zl7u48zLVFgLpRwq6f/giphy.gif" alt="Kucing Lucu" class="cute-gif">
+                <div class="gif-frame float-anim">
+                    <!-- Ingat, gunakan nama file foto kamu -->
+                    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2MweHM2OW1xc3Z4czAwOHUyZTY1dmZsZXVndDlzdzh5bGZic2R3YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Zl7u48zLVFgLpRwq6f/giphy.gif" alt="Foto Kita" class="cute-gif">
                 </div>
                 
-                <h1 class="title">Halo Cantik... ✨</h1>
+                <h2 class="title glow-text">Jadi... 🥺</h2>
                 <p class="message">
-                    Ada sesuatu yang pengen aku sampein ke kamu. 
-                    Tiap kali ngobrol sama kamu, duniaku rasanya jadi warna pink. Kamu bikin aku selalu pengen senyum. 🌸
-                    <br><br>
-                    Kamu mau nggak jadi pacarku? 🥺
+                    Kamu mau nggak jadi pacarku?
                 </p>
                 
                 <div class="btn-group">
@@ -42,23 +63,21 @@
             </div>
         </div>
 
-        <!-- KARTU SUKSES -->
+        <!-- Kartu Sukses (Berisi Teks Pilihanmu!) -->
         <div id="success-card" class="card hidden">
             <div class="card-content">
-                <div class="gif-frame large-frame">
-                    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2gzcHhjaTRtb2gzZHd4YWpwYTNjd3M1dnRiY2JzNGk1YWhwZnRvciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lRROoaFcqRgCq5D906/giphy.gif" alt="Kucing Pelukan" class="cute-gif">
+                <div class="gif-frame large-frame float-anim">
+                    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2gzcHhjaTRtb2gzZHd4YWpwYTNjd3M1dnRiY2JzNGk1YWhwZnRvciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lRROoaFcqRgCq5D906/giphy.gif" alt="Pelukan" class="cute-gif">
                 </div>
                 
-                <h1 class="thanks-typography">Yeayyy! Makasih Sayang! 🎀</h1>
+                <h1 class="thanks-typography glow-text">Yeayyy! 🎀</h1>
                 
                 <p class="message success-message">
-                    Wahhh, aku seneng bangettt! Hari ini resmi jadi hari paling spesial buat aku. 
-                    Sekarang kita jadian ya! Nanti kita jalan-jalan berdua yuk! 🌷💕
+                    Cieee pacar aku! 🙈💖 Yeayyy resmi ya sekarang! Makasih udah ngasih aku kesempatan buat jagain kamu. Awas aja kalau nanti pas ketemu kamu ikutan salting kayak aku sekarang wkwk
                 </p>
             </div>
         </div>
-        
-    </main>
+    </section>
 
     <script src="script.js"></script>
 </body>
